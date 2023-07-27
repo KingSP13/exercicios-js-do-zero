@@ -21,7 +21,7 @@ Vincule este arquivo (app.js) ao index.html desta mesma pasta.
 Conserte o nome da let abaixo.
 */
 
-let numero impar = 7
+let numeroImpar = 7
 
 /* 
 03
@@ -33,6 +33,7 @@ Não modifique a declaração da let.
 O código que você escrever deve estar abaixo deste comentário.
 */
 
+numeroImpar = 3
 
 
 /*
@@ -45,6 +46,7 @@ que exibiu a const no console.
 */
 
 const meExiba = 123
+
 
 /*
 05
@@ -80,7 +82,7 @@ Dica: o ajuste deve ser feito apenas na linha da declaração de
 "videoGame". 
 */
 
-const videoGame = 'Xbox'
+let videoGame = 'Xbox'
 
 videoGame = 'Playstation'
 
@@ -103,13 +105,16 @@ y = 5
 
 const final = x + y + 7 + w
 
+//24 é o resultado
+
+
 /*
 08
 
 Conserte a declaração da variável abaixo. 
 */
 
-umNumeroQualquer = 9
+let umNumeroQualquer = 9
 
 /*
 09
@@ -148,7 +153,9 @@ Conserte o que está errado na string abaixo.
 */
 
 const likes = 197
-const mensagem = 'Sua foto recebeu ${likes} likes'
+const mensagem = `Sua foto recebeu ${likes} likes.`
+
+// console.log(mensagem)
 
 /*
 11
