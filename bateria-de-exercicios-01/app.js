@@ -146,6 +146,8 @@ para gerar o valor da constante "sigla".
 
 const curso = 'Curso de JavaScript Roger Melo'
 
+const sigla = curso[0] + curso[9] + curso[20] + curso[26]
+
 /*
 10
 
@@ -173,7 +175,16 @@ Os valores das propriedades acima ficam ao seu critério. Use uma
 série que você curta =)
 */
 
+let showName = "Californication"
+let seasons = 7
+let episodes = 84
+let publisher = "Showtime"
 
+const tvShow = new Object();
+    tvShow.showName = showName;
+    tvShow.seasons = seasons;
+    tvShow.episodes = episodes;
+    tvShow.publisher = publisher;
 
 /*
 12
@@ -182,12 +193,24 @@ Obtenha o valor de cada propriedade do objeto "serie" e exiba-o
 no console.
 */
 
-
+// console.log(tvShow.showName)
+// console.log(tvShow.seasons)
+// console.log(tvShow.episodes)
+// console.log(tvShow.publisher)
 
 /*
 13
 
 Sobrescreva o valor de cada propriedade do objeto.
-
 Após sobrescrever, exiba o novo valor de cada uma no console.
 */
+
+// tvShow.showName = "The Mentalist"
+// tvShow.seasons = 7
+// tvShow.episodes = 151
+// tvShow.publisher = "CBS"
+
+// console.log(tvShow.showName)
+// console.log(tvShow.seasons)
+// console.log(tvShow.episodes)
+// console.log(tvShow.publisher)
