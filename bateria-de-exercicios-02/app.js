@@ -34,7 +34,7 @@ Será que este array precisa ser declarado com a palavra-chave
 let?
 */
 
-let marca = ['Apple', 'Sony', 'Samsung', 'Microsoft']
+const marcas = ['Apple', 'Sony', 'Samsung', 'Microsoft']
 
 /*
 02
@@ -48,11 +48,20 @@ Você pode modificar a forma de declaração dos valores abaixo,
 se necessário.
 */
 
-const nome = 'Friends'
-const temporadas = 10
-const episodios = 236
-const temaAbertura = `I'll Be There for You`
-const elencoPrincipal = ['Jennifer Aniston', 'Courteney Cox', 'Lisa Kudrow', 'Matt LeBlanc', 'Matthew Perry', 'David Schwimmer']
+const tvShow = {
+  serieName: 'Friends',
+  temporadas: 10,
+  episodios: 236,
+  temaAbertura: `I'll Be There for You`,
+  elencoPrincipal: ['Jennifer Aniston', 'Courteney Cox', 'Lisa Kudrow', 'Matt LeBlanc', 'Matthew Perry', 'David Schwimmer']
+}
+
+
+// const nome = 'Friends'
+// const temporadas = 10
+// const episodios = 236
+// const temaAbertura = `I'll Be There for You`
+// const elencoPrincipal = ['Jennifer Aniston', 'Courteney Cox', 'Lisa Kudrow', 'Matt LeBlanc', 'Matthew Perry', 'David Schwimmer']
 
 /*
 03
@@ -65,12 +74,7 @@ Será que a estrutura usada é ideal para organizar estas
 informações?
 */
 
-const frutas = {
-  fruta1: 'banana',
-  fruta2: 'maçã',
-  fruta3: 'pera',
-  fruta4: 'uva'
-}
+const frutas = ['banana', 'maçã', 'pera', 'uva']
 
 /*
 04
@@ -78,7 +82,7 @@ const frutas = {
 Declare uma const banda e atribua a ela um objeto vazio.
 */
 
-
+const banda = {}
 
 /*
 05
@@ -93,7 +97,7 @@ Adicione no objeto banda uma propriedade nome.
 Atribua o valor 'Led Zeppelin' para a propriedade nome.
 */
 
-
+banda.nome = 'Led Zeppelin'
 
 /*
 06
@@ -108,7 +112,7 @@ Dica:
 O tipo de valor da propriedade deve ser uma lista.
 */
 
-
+banda.generos = ['Hard Rock', 'Blues', 'Rock-Folk', 'Rock', 'Heavy Metal']
 
 /*
 07
@@ -125,7 +129,7 @@ Dica:
 Use um boolean para indicar que a banda não está na ativa.
 */
 
-
+banda.onStage = true
 
 /*
 08
@@ -152,7 +156,17 @@ O tipo de valor da propriedade albuns deve ser uma lista.
 O tipo de valor das propriedades capa deve ser uma string.
 */
 
-
+banda.albums = [
+  {
+  nome: 'Houses of the Holy',
+  ano: 1973,
+  capa: 'https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Houses_of_the_Holy.jpg'},
+  {
+  nome: 'Physical Graffiti',
+  ano: 1975,
+  capa: 'https://upload.wikimedia.org/wikipedia/en/e/e3/Led_Zeppelin_-_Physical_Graffiti.jpg'
+  }
+]
 
 /*
 09
@@ -161,7 +175,7 @@ Abaixo deste comentário, modifique o valor da propriedade ano
 do album Physical Graffiti para 1976.
 */
 
-
+banda.albums[1].ano = 1976
 
 /*
 10
