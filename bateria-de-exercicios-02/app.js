@@ -129,7 +129,7 @@ Dica:
 Use um boolean para indicar que a banda não está na ativa.
 */
 
-banda.onStage = true
+banda.onStage = false
 
 /*
 08
